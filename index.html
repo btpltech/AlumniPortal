@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="Utkarsh Shukla (utk.shukla@gmail.com)">
+		<title>CatchUp</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/docs.css" rel="stylesheet">
+		<link href="css/pygments-manni.css" rel="stylesheet">
+		<link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
+		<link href="css/bootstrap-modal.css" rel="stylesheet" />
+		<link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+		<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+		<link href="css/app.css" rel="stylesheet">
+		<!--[if lt IE 9]><script src="./docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/backgroundProcess.js"></script>
+		<script type='text/javascript' src='js/jobs.js'></script>
+		<script type='text/javascript' src="js/header.js"></script>
+		<script type='text/javascript' src="js/login.js"></script>
+		<script type='text/javascript' src="js/map.js"></script>
+		<script type='text/javascript' src="js/marker.js"></script>
+		<script type='text/javascript' src="js/peopleSearch.js"></script>
+		<script type='text/javascript' src="js/index.js"></script>
+		<script type="text/javascript" src="js/infofetchThread.js"></script>
+		<script src="https://jobaggrigation.azure-mobile.net/client/MobileServices.Web-1.0.3.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script type="text/javascript" src="http://studydomain.com/linkedin/in.js">
+			  api_key: 46mmz3yq2co1
+			  onLoad: onLinkedInLoad
+			  authorize: true
+		</script>
+  </head>
+  <body class="app">
+  	<!-- Loader for the loading of the Screen -->
+	<div id="beforelogin" style="display:none;padding-left:48%;padding-top:15%;"><img src="img/loader.gif"/></div>	
+	
+	<!-- Starting of the Header -->
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav " role="banner">
+	  <div class="container">
+		<div class="navbar-header">
+		  <a href="#" class="navbar-brand" id="College1"><img src="img/logo.png" height="45px"></a>
+		</div>
+		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+	      	<ul class="nav navbar-nav navbar-right" style="display:none;" id="topright-nav">
+	        	<li>
+	          		<a href="#" onClick="showPeopleDiv()">People</a>
+				</li>
+				<li>
+					<a href="#" onClick="showJobsDiv()">Jobs</a>
+		        </li>
+		        <li>
+	          		<a href="#">News</a>
+	        	</li>
+	        	<li>
+	          		<a href="#">Fundraise</a>
+	        	</li>
+	      	</ul>
+		</nav>
+	  </div>
+	</header>
+	<div class="clearfix"></div>
+	<!-- Ending of the Header -->
+
+	<!-- Main Content of the Page -->
+
+	<!-- *************** Index Page Start  **************** -->
+	<div id="maincontent">
+		<!-- Body of the main page -->
+
+		<div class="bs-masthead" >
+		   	<div class="container">
+				<div class="row bs-social-btn">
+					<div class="col-lg-4 col-md-4 pull-left">
+						<h1>Best way to engage with your alumni is to give them opportunities</h1>
+					</div>
+					<div class="col-lg-4 col-md-4 pull-right text-center">
+						<div style="position:relative">
+							<script type="IN/Login" data-size="xlarge"></script>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of  Main Page body -->
+		
+		<!-- Starting of the Footer -->
+		<div class="clearfix"></div>
+		<footer class="bs-footer">
+			<div class="container">
+				<div class="col-lg-10 col-xs-offset-1">
+					<div class="col-lg-3 col-sm-3 ">
+						<h4>Powered By:</h4>
+						<img src="img/logo.png" width="100">
+					</div>
+					<div class="col-lg-3 col-sm-3">
+						<h4>About us</h4>
+						<address>
+							Catchup Inc.
+							912B Jefferson Ville
+							Redwood City CA
+							(01)(981)(013)(4091)
+						</address>
+						<h5>Contact us</h5>
+						<a href="#" class="footer-links">contact@letscatchup.net</a>
+					</div>
+					<div class="col-lg-3 col-sm-3 ">
+						<h4>Legal</h4>
+						<a class="footer-links" href="#">Privacy Policy</a>
+						<br>
+						<a class="footer-links" href="#">Terms And Codnditions</a>
+						<div class="clearfix"></div>
+						<h5>Links</h5>
+						<a class="footer-links" href="#">Blog</a>
+						<br>
+						<a class="footer-links" href="#">News</a>
+					</div>
+					<div class="col-lg-3 col-sm-3 ">
+						<h4>Social Presence</h4>
+						<p>&nbsp;</p>
+						<div class="bs-social-buttons">
+							<a href="btn link "><i class="fa fa-linkedin"></i></a>
+							<a href="btn  tw "><i class="fa fa-twitter"></i></a>
+							<a href="btn  fac"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Ending of the Footer -->
+	</div>
+	<!-- ****************Index Page Ends************* -->
+	
+	<!-- ***************People Page**************** -->
+	<div id="peoplecontent" style="display:none;">
+	</div>
+	<!-- ***************People Page Ends*********** -->
+
+	<!-- ************* Job Page ************** -->
+	<!-- Search Nav bar for Jobs Page -->
+	<div id="jobsearchnavbar" class="navbar navbar-default search navbar-fixed-top" style="display:none;">
+		<div class="container">  
+        	<a  href="#" class="btn btn-link pull-left"><img src="img/nearme.png" width="25"></a>
+        	<form  class=" pull-left">
+            	<input type="search" placeholder="Search here" class="form-control" id="search123" onKeyUp="searchMyJob()" autocomplete="off"/>
+        	</form>
+        	<a href="#" class="btn btn-link pull-left col-xs-pull-1" style="margin-left:20px;"><img src="img/edit.jpg" width="25"></a>
+        	<a href="set.html" class="btn btn-link pull-right"><img src="img/set.png" width="25"></a>
+    	</div>
+    	<div class="clearfix"></div>
+	</div>
+
+	<div id="jobcontent" style="display:none;">
+	<div class="list" style="height: 341px; width: 100%">
+	   <ul class="nav nav-list" id="results1234">
+	   </ul>
+	</div>
+	</div>
+	<!-- *************Job Page Ends ********** -->
+
+	<!-- Main Content Of the Page -->
+
+	<!-- Model Boxes -->
+	<div id="static" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+		<div class="modal-body text-center">
+		   <h2>Send an Invitation to Catchup?</h2>
+		</div>
+		<div class="modal-footer text-center">
+			<button type="button" data-dismiss="modal" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#confirm">Yes</button>
+			<button type="button" data-dismiss="modal" class="btn btn-primary btn-lg">No</button>
+		</div>
+	</div>
+
+	<div id="confirm" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false" style="display: none;">
+		<div class="modal-body text-center">
+		   <h2>Your Invitation Has Been Send</h2>
+		</div>
+		<div class="modal-footer text-center">
+			<button type="button" data-dismiss="modal" class="btn btn-success btn-block">OK</button>
+		</div>
+	</div>
+	<!-- Model Boxes End -->
+
+	<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+	<script src="js/libs/jquery.easing.js"></script>
+    <script src="js/waterfall.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		//Handles menu drop down
+		$('.dropdown-menu').find('form').click(function (e) {
+			e.stopPropagation();
+		});
+	});
+	</script>
+
+
+  </body>
+</html>
+
+
+

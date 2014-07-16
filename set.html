@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>People</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="css/docs.css" rel="stylesheet">
+<link href="css/pygments-manni.css" rel="stylesheet">
+<link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
+  <link href="css/bootstrap-modal.css" rel="stylesheet" />
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]><script src="./docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body class="app">
+
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand" id="College12">loading...</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="#" onClick="showPeopleDiv()">People</a>
+	</li>
+        <li>
+          <a href="#" onClick="showJobsDiv()">Jobs</a>
+        </li>
+        <li>
+          <a href="#">News</a>
+        </li>
+        <li>
+          <a href="#">fundraise</a>
+        </li>
+        
+      </ul>
+      
+    </nav>
+  </div>
+</header>
+ <div class="navbar navbar-default search navbar-fixed-top" >
+  <div class="container">  <a  href="#" class="btn btn-link pull-left"><img src="img/nearme.png" width="25"></a>
+  <form  class=" pull-left">
+
+  <input type="search" placeholder="Search here" class="form-control">
+ 
+  </form>
+  <a href="#" class="btn btn-link pull-left col-xs-pull-1" style="margin-left:20px;"><img src="img/edit.jpg" width="25"></a>
+   <a href="#" class="btn btn-link pull-right" onClick="getSetPage()"><img src="img/set.png" width="25"></a>
+  </div>
+  </div>
+  <div class="clarfix"></div>
+  <div class="container">
+  <div class="container">
+<P>
+<div class="col-lg-6 col-xs-offset-3">
+<ul class="list-group">
+  <li class="list-group-item" ><a  href="#">Profile</a></li>
+  <li class="list-group-item"><a  href="#">Notfication</a></li>
+  <li class="list-group-item"><a  href="#">Info</a></li>
+</ul>
+<ul class="list-group">
+  <li class="list-group-item"><a  href="#">Inite By messege</a></li>
+  <li class="list-group-item"><a  href="#">Invite By Mail</a></li>
+  <li class="list-group-item"><a  href="#">Share On Facebook</a></li>
+  <li class="list-group-item"><a  href="#">Tweet About CATCHUP</a></li>
+  <li class="list-group-item"><a  href="#" onClick="LogOut()">LogOut</a></li>
+</ul>
+</div>
+</P>
+
+</div>
+</div>
+<script src="js/index.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(window).resize(function() {
+    $('.list').height($(window).height() -100);
+	$('.map').height($(window).height() -100);
+	$("html").css("overflow", "hidden");
+});
+$(window).trigger('resize');
+
+});</script>
+</body>
+</html>

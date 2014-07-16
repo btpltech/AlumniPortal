@@ -1,0 +1,35 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+var addressArray1 = [];
+var index = 0;
+function linkedinmarker(){
+    var k = 0;
+    var addressArray = new Array("41 Green Ln, Handsworth, Birmingham, West Midlands B21 0DE, UK","BT27 4SB","Norwich","delhi, India","Australlia","Rusia","Masko","Finland","Sri Lanka","Japan");
+    var geocoder = new google.maps.Geocoder();
+    var markerBounds = new google.maps.LatLngBounds();
+	for (var i = 0; i < 8 && i < addressArray.length ; i++)
+	{
+	   alert(addressArray[i]);
+	   geocoder.geocode( { 'address': addressArray[i]}, showfunction(addressArray[i]));
+	   //google.maps.event.addListener(marker,'click',showiwindow(sdata));
+	   (function () {
+			var postId=results[i][1];
+			google.maps.event.addListener(markers[markers.length-1], 'mouseover', function() {
+				console.log(postId);
+			});
+		})();
+	}
+	alert(addressArray1);
+}
+function showfunction(rdata)
+	{
+	  return function(){
+	   if (status == google.maps.GeocoderStatus.OK) {
+		addressArray1[index] = rdata.geometry.location;
+		index++;
+		} 
+	  };
+	}
+</script>
+<body onload="linkedinmarker()">
+</body>
